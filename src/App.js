@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="main">
       <NavBar />
+      <div className="content">just seek knowledge</div>
     </div>
   );
 }

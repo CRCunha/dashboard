@@ -3,4 +3,16 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.main .content {
+  width: 94%;
+  height: 96vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #7754f8;
 }
