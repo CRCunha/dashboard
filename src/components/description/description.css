@@ -1,6 +1,6 @@
 .description {
-  width: 90%;
-  height: 220px;
+  width: 94%;
+  height: 180px;
 
   display: flex;
   align-items: flex-end !important;
@@ -11,15 +11,16 @@
   height: 80%;
 
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
 
   border-radius: 20px;
-  box-shadow: 0 20px 30px -16px rgba(9, 9, 16, 0.2);
+  box-shadow: 0 2px 30px -16px rgba(9, 9, 16, 0.2);
   background-color: #fff;
 }
 
 .description .content .text {
-  width: 70%;
+  width: 80%;
   height: 100%;
 
   display: flex;
@@ -28,7 +29,7 @@
 }
 
 .description .content .imgContainer {
-  width: 30%;
+  width: 20%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -36,6 +37,6 @@
 }
 
 .description .content .imgContainer img {
-  width: 50%;
+  width: 56%;
   margin-bottom: 5px;
 }
