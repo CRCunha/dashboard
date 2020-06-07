@@ -3,9 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import NavBar from "../components/navBar";
 
 import Home from "../pages/home";
-// import Growth from "../pages/growth";
-// import Table from "../pages/table";
-// import Perfil from "../pages/perfil";
+import Other from "../pages/others";
 
 const Routes = () => (
   // eslint-disable-next-line react/jsx-filename-extension
@@ -13,7 +11,7 @@ const Routes = () => (
     <NavBar />
     <Switch>
       <Route path="/" exact component={Home} />
-      {/* <Route path="/growth" component={Growth} /> */}
+      <Route path="/other" component={Other} />
     </Switch>
   </BrowserRouter>
 );

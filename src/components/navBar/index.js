@@ -22,16 +22,16 @@ const NavBar = () => {
             <Link to="/" className="menuIten">
               <AiFillHome />
             </Link>
-            <Link to="/Teste" className="menuIten">
+            <Link to="/Other" className="menuIten">
               <AiFillMail />
             </Link>
-            <Link to="/Teste" className="menuIten">
+            <Link to="/Other" className="menuIten">
               <AiFillFund />
             </Link>
-            <Link to="/Teste" className="menuIten">
+            <Link to="/Other" className="menuIten">
               <AiFillHdd />
             </Link>
-            <Link to="/Teste" className="menuIten">
+            <Link to="/Other" className="menuIten">
               <AiFillSecurityScan />
             </Link>
           </div>
