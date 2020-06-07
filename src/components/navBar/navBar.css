@@ -13,7 +13,7 @@ nav {
 }
 
 nav .container {
-  width: 100%;
+  width: 55px;
   height: 99%;
 
   text-align: center;
@@ -55,9 +55,6 @@ nav .container .menu .container {
 }
 
 nav .container .menu .container .menuIten {
-  width: 50px;
-  height: 50px;
-
   border-radius: 20px;
 
   display: flex;
@@ -81,4 +78,19 @@ nav .container .menu .container .menuIten:hover {
   color: #e67225;
 
   box-shadow: 0 20px 30px -16px rgba(9, 9, 16, 0.2);
+}
+
+.MuiBottomNavigationAction-root {
+  max-width: 50px !important;
+  min-width: 50px !important;
+  padding: 0px 15px 6px !important;
+}
+
+.MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly {
+  padding-top: 16px !important;
+  padding-bottom: 20;
+}
+
+.MuiBottomNavigationAction-wrapper {
+  margin-bottom: 10px;
 }

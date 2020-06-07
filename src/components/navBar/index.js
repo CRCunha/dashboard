@@ -10,7 +10,12 @@ import {
   AiFillSecurityScan,
 } from "react-icons/ai";
 
+import BottomNavigation from "@material-ui/core/BottomNavigation";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
+
 const NavBar = () => {
+  const [value, setValue] = React.useState(0);
+
   return (
     <nav>
       <div className="container">
@@ -18,23 +23,49 @@ const NavBar = () => {
           <img src={Logo} alt="Logo" />
         </div>
         <div className="menu">
-          <div className="container">
-            <Link to="/" className="menuIten">
-              <AiFillHome />
+          <BottomNavigation
+            className="container"
+            value={value}
+            onChange={(event, newValue) => {
+              setValue(newValue);
+            }}
+            showLabels
+          >
+            <Link to="/">
+              <BottomNavigationAction
+                className="menuIten"
+                icon={<AiFillHome />}
+              />
             </Link>
-            <Link to="/Other" className="menuIten">
-              <AiFillMail />
+
+            <Link to="/Other">
+              <BottomNavigationAction
+                className="menuIten"
+                icon={<AiFillMail />}
+              />
             </Link>
-            <Link to="/Other" className="menuIten">
-              <AiFillFund />
+
+            <Link to="/Other">
+              <BottomNavigationAction
+                className="menuIten"
+                icon={<AiFillFund />}
+              />
             </Link>
-            <Link to="/Other" className="menuIten">
-              <AiFillHdd />
+
+            <Link to="/Other">
+              <BottomNavigationAction
+                className="menuIten"
+                icon={<AiFillHdd />}
+              />
             </Link>
-            <Link to="/Other" className="menuIten">
-              <AiFillSecurityScan />
+
+            <Link to="/Other">
+              <BottomNavigationAction
+                className="menuIten"
+                icon={<AiFillSecurityScan />}
+              />
             </Link>
-          </div>
+          </BottomNavigation>
         </div>
       </div>
     </nav>
