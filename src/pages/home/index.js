@@ -4,7 +4,7 @@ import Descritpion from "../../components/description";
 
 const Home = () => {
   return (
-    <div className="content">
+    <div className="contentHome">
       <Descritpion />
     </div>
   );

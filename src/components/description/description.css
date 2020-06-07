@@ -3,7 +3,7 @@
   height: 220px;
 
   display: flex;
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 
 .description .content {
@@ -33,9 +33,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-bottom: 10px;
 }
 
 .description .content .imgContainer img {
-  width: 52%;
+  width: 50%;
+  margin-bottom: 5px;
 }

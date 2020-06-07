@@ -1,8 +1,10 @@
-.content {
+.contentHome {
   width: 95%;
   height: 96vh;
 
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 
   color: #e67225;
