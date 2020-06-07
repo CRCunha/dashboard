@@ -1,10 +1,14 @@
 import React from "react";
 import "./navBar.css";
 import Logo from "../../assets/logo.png";
-import ShowChartIcon from "@material-ui/icons/ShowChart";
-import WebAssetOutlinedIcon from "@material-ui/icons/WebAssetOutlined";
-import TurnedInNotOutlinedIcon from "@material-ui/icons/TurnedInNotOutlined";
-import DraftsOutlinedIcon from "@material-ui/icons/DraftsOutlined";
+import { Link } from "react-router-dom";
+import {
+  AiFillHome,
+  AiFillMail,
+  AiFillFund,
+  AiFillHdd,
+  AiFillSecurityScan,
+} from "react-icons/ai";
 
 const NavBar = () => {
   return (
@@ -15,18 +19,21 @@ const NavBar = () => {
         </div>
         <div className="menu">
           <div className="container">
-            <div className="menuIten">
-              <DraftsOutlinedIcon />
-            </div>
-            <div className="menuIten">
-              <ShowChartIcon />
-            </div>
-            <div className="menuIten">
-              <WebAssetOutlinedIcon />
-            </div>
-            <div className="menuIten">
-              <TurnedInNotOutlinedIcon />
-            </div>
+            <Link to="/" className="menuIten">
+              <AiFillHome />
+            </Link>
+            <Link to="/Teste" className="menuIten">
+              <AiFillMail />
+            </Link>
+            <Link to="/Teste" className="menuIten">
+              <AiFillFund />
+            </Link>
+            <Link to="/Teste" className="menuIten">
+              <AiFillHdd />
+            </Link>
+            <Link to="/Teste" className="menuIten">
+              <AiFillSecurityScan />
+            </Link>
           </div>
         </div>
       </div>

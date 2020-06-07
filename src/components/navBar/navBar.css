@@ -1,5 +1,5 @@
 nav {
-  width: 60px;
+  width: 55px;
   height: 95vh;
 
   background-color: #fff;
@@ -22,7 +22,7 @@ nav .container {
 /* Logo */
 nav .container .logo {
   width: 100%;
-  height: 60px;
+  height: 50px;
 
   display: flex;
   justify-content: center;
@@ -55,8 +55,8 @@ nav .container .menu .container {
 }
 
 nav .container .menu .container .menuIten {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
 
   border-radius: 20px;
 
@@ -71,6 +71,8 @@ nav .container .menu .container .menuIten {
   transition: 0.6s;
 
   margin-bottom: 20px;
+
+  font-size: 1.4em;
 }
 
 nav .container .menu .container .menuIten:hover {

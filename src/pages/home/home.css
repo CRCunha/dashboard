@@ -1,0 +1,10 @@
+.content {
+  width: 94%;
+  height: 96vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #7754f8;
+}
