@@ -1,29 +1,11 @@
 import React from "react";
 import "./home.css";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import Descritpion from "../../components/description";
 
 const Home = () => {
-  const [progress, setProgress] = React.useState(0);
-
-  React.useEffect(() => {
-    function tick() {
-      // reset when reaching 100%
-      setProgress((oldProgress) => (oldProgress >= 100 ? 0 : oldProgress + 1));
-    }
-
-    const timer = setInterval(tick, 20);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-
   return (
     <div className="content">
-      <CircularProgress
-        style={{ color: "#e67225" }}
-        variant="determinate"
-        value={progress}
-      />
+      <Descritpion />
     </div>
   );
 };
