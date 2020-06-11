@@ -4,6 +4,7 @@ import NavBar from "../components/navBar";
 
 import Home from "../pages/home";
 import Line from "../pages/line";
+import Choice from "../pages/choice";
 import Other from "../pages/others";
 
 const Routes = () => (
@@ -13,6 +14,7 @@ const Routes = () => (
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/Line" exact component={Line} />
+      <Route path="/Choice" exact component={Choice} />
       <Route path="/other" component={Other} />
     </Switch>
   </BrowserRouter>

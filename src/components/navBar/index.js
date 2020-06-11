@@ -10,6 +10,8 @@ import {
   AiFillSecurityScan,
 } from "react-icons/ai";
 
+import { FaExchangeAlt } from "react-icons/fa";
+
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
@@ -45,10 +47,10 @@ const NavBar = () => {
               />
             </Link>
 
-            <Link to="/Other">
+            <Link to="/Choice">
               <BottomNavigationAction
                 className="menuIten"
-                icon={<AiFillMail />}
+                icon={<FaExchangeAlt />}
               />
             </Link>
 
