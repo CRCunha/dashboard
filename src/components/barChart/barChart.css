@@ -1,5 +1,5 @@
 .barChart {
-  width: 95%;
+  width: 94%;
   height: 300px;
 
   border-radius: 20px;
@@ -7,4 +7,6 @@
   background-color: #fff;
 
   box-shadow: 0 2px 30px -16px rgba(9, 9, 16, 0.2);
+
+  margin-bottom: 20px;
 }

@@ -10,7 +10,8 @@ const Home = () => {
         title="Home Page"
         description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       />
-      <BarChart style={{ marginTop: -100 }} />
+      <BarChart />
+      <BarChart style={{ display: "none" }} />
     </div>
   );
 };

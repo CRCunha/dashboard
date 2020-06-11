@@ -3,8 +3,26 @@
   height: 96vh;
 
   display: flex;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 
   color: #e67225;
+
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
 }
