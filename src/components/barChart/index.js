@@ -2,6 +2,7 @@ import React from "react";
 import "./barChart.css";
 import { ResponsiveBar } from "@nivo/bar";
 import data from "./data";
+import { ListColors } from "../colorCharts.js";
 
 const BarChart = () => {
   return (
@@ -12,7 +13,7 @@ const BarChart = () => {
         indexBy="country"
         margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
         padding={0.3}
-        colors={["#e67225", "#DF525E", "#B54E83", "#79548D", "#44537B"]}
+        colors={ListColors}
         defs={[
           {
             id: "dots",

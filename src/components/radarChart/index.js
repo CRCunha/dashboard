@@ -2,6 +2,7 @@ import React from "react";
 import "./radarChart.css";
 import { ResponsiveRadar } from "@nivo/radar";
 import data from "./data.json";
+import { ListColors } from "../colorCharts.js";
 
 const RadarChart = () => {
   return (
@@ -26,7 +27,7 @@ const RadarChart = () => {
         enableDotLabel={true}
         dotLabel="value"
         dotLabelYOffset={-12}
-        colors={["#e67225", "#DF525E", "#B54E83", "#79548D", "#44537B"]}
+        colors={ListColors}
         fillOpacity={0.25}
         blendMode="multiply"
         animate={true}

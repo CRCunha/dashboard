@@ -2,6 +2,7 @@ import React from "react";
 import "./pieChart.css";
 import { ResponsivePie } from "@nivo/pie";
 import data from "./data.json";
+import { ListColors } from "../colorCharts.js";
 
 const PieChart = () => {
   return (
@@ -12,7 +13,7 @@ const PieChart = () => {
         innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
-        colors={["#e67225", "#DF525E", "#B54E83", "#79548D", "#44537B"]}
+        colors={ListColors}
         borderWidth={1}
         borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
         radialLabelsSkipAngle={10}
