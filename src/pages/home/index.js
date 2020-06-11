@@ -4,7 +4,8 @@ import Descritpion from "../../components/description";
 import BarChart from "../../components/barChart";
 import PieChart from "../../components/pieChart";
 import RadarChart from "../../components/radarChart";
-import CalendarChart from "../../components/calendarChart";
+import ChortChart from "../../components/chrodChart";
+// import CalendarChart from "../../components/calendarChart";
 
 const Home = () => {
   return (
@@ -17,9 +18,9 @@ const Home = () => {
       <div className="smallCharts">
         <PieChart />
         <RadarChart />
-        <PieChart />
+        <ChortChart />
       </div>
-      <CalendarChart />
+      {/* <CalendarChart /> */}
     </div>
   );
 };

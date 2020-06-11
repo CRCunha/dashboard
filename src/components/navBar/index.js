@@ -38,17 +38,17 @@ const NavBar = () => {
               />
             </Link>
 
-            <Link to="/Other">
+            <Link to="/Line">
               <BottomNavigationAction
                 className="menuIten"
-                icon={<AiFillMail />}
+                icon={<AiFillFund />}
               />
             </Link>
 
             <Link to="/Other">
               <BottomNavigationAction
                 className="menuIten"
-                icon={<AiFillFund />}
+                icon={<AiFillMail />}
               />
             </Link>
 

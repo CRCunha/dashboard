@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import NavBar from "../components/navBar";
 
 import Home from "../pages/home";
+import Line from "../pages/line";
 import Other from "../pages/others";
 
 const Routes = () => (
@@ -11,6 +12,7 @@ const Routes = () => (
     <NavBar />
     <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/Line" exact component={Line} />
       <Route path="/other" component={Other} />
     </Switch>
   </BrowserRouter>
