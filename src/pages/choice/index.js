@@ -10,9 +10,10 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 
-import { AiFillCalendar } from "react-icons/ai";
+import { AiFillCalendar, AiOutlineDotChart } from "react-icons/ai";
 
 import CalendarChart from "../../components/calendarChart";
+import ScatterChart from "../../components/scatterChart";
 
 const useStyles = makeStyles({
   root: {
@@ -59,8 +60,8 @@ const Choice = () => {
           />
           <BottomNavigationAction
             className="buttom"
-            label="Favorites"
-            icon={<FavoriteIcon />}
+            label="Scatter"
+            icon={<AiOutlineDotChart className="iconButtom" />}
           />
           <BottomNavigationAction
             className="buttom"
@@ -71,7 +72,9 @@ const Choice = () => {
       </div>
       <div className="chart">
         {value === 0 ? (
-          <CalendarChart />
+          <CalendarChart className="calendarChart" />
+        ) : value === 1 ? (
+          <ScatterChart className="scatterPlot" />
         ) : (
           <CircularProgress
             style={{ color: "#e67225" }}

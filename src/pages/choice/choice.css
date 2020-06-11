@@ -62,8 +62,12 @@
   align-items: center;
 }
 
-.calendarChart {
-  box-shadow: 0 0 0 0 rgba(9, 9, 16, 0.2);
+.chart .calendarChart {
+  box-shadow: 0px 0px 0px 0px rgba(9, 9, 16, 0);
+}
+
+.chart .scatterPlot {
+  box-shadow: 0px 0px 0px 0px rgba(9, 9, 16, 0);
 }
 
 .iconButtom {
