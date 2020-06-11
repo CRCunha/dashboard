@@ -38,6 +38,8 @@
 .contentChoice .buttonControler .MuiBottomNavigation-root {
   border-radius: 20px;
   margin-top: -25px;
+
+  box-shadow: 0 2px 30px -16px rgba(9, 9, 16, 0.2);
 }
 
 .contentChoice .buttonControler .MuiSvgIcon-root {
@@ -58,6 +60,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.calendarChart {
+  box-shadow: 0 0 0 0 rgba(9, 9, 16, 0.2);
 }
 
 .iconButtom {
