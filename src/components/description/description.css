@@ -60,6 +60,8 @@
   align-items: center;
 
   color: #cccccc;
+
+  overflow: hidden;
 }
 
 .description .content .imgContainer {
@@ -68,9 +70,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  overflow: hidden;
 }
 
 .description .content .imgContainer img {
-  width: 140px;
+  width: 110px;
   margin-bottom: 5px;
+
+  overflow: hidden;
 }
