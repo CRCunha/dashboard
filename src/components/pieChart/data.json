@@ -1,0 +1,32 @@
+[
+  {
+    "id": "scala",
+    "label": "scala",
+    "value": 521,
+    "color": "hsl(118, 70%, 50%)"
+  },
+  {
+    "id": "php",
+    "label": "php",
+    "value": 292,
+    "color": "hsl(175, 70%, 50%)"
+  },
+  {
+    "id": "haskell",
+    "label": "haskell",
+    "value": 207,
+    "color": "hsl(101, 70%, 50%)"
+  },
+  {
+    "id": "hack",
+    "label": "hack",
+    "value": 335,
+    "color": "hsl(117, 70%, 50%)"
+  },
+  {
+    "id": "c",
+    "label": "c",
+    "value": 502,
+    "color": "hsl(74, 70%, 50%)"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "taste": "fruity",
+    "chardonay": 106,
+    "carmenere": 85,
+    "syrah": 88
+  },
+  {
+    "taste": "bitter",
+    "chardonay": 61,
+    "carmenere": 109,
+    "syrah": 52
+  },
+  {
+    "taste": "heavy",
+    "chardonay": 105,
+    "carmenere": 105,
+    "syrah": 62
+  },
+  {
+    "taste": "strong",
+    "chardonay": 72,
+    "carmenere": 94,
+    "syrah": 25
+  },
+  {
+    "taste": "sunny",
+    "chardonay": 48,
+    "carmenere": 95,
+    "syrah": 118
+  }
+]

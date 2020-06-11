@@ -12,6 +12,12 @@
   overflow: auto;
 }
 
+.contentHome .smallCharts {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
