@@ -103,17 +103,17 @@ const PieChart = () => {
         //   {
         //     anchor: "bottom",
         //     direction: "row",
-        //     translateY: 56,
-        //     itemWidth: 100,
+        //     translateY: 65,
+        //     itemWidth: 60,
         //     itemHeight: 18,
         //     itemTextColor: "#999",
-        //     symbolSize: 18,
+        //     symbolSize: 16,
         //     symbolShape: "circle",
         //     effects: [
         //       {
         //         on: "hover",
         //         style: {
-        //           itemTextColor: "#000",
+        //           itemTextColor: "#3f3f3f",
         //         },
         //       },
         //     ],

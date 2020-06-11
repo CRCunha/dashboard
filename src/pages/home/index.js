@@ -4,6 +4,7 @@ import Descritpion from "../../components/description";
 import BarChart from "../../components/barChart";
 import PieChart from "../../components/pieChart";
 import RadarChart from "../../components/radarChart";
+import CalendarChart from "../../components/calendarChart";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <RadarChart />
         <PieChart />
       </div>
+      <CalendarChart />
     </div>
   );
 };
