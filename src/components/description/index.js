@@ -1,31 +1,18 @@
 import React from "react";
 import "./description.css";
 import ImgDesciption from "../../assets/description.svg";
-import CircularProgress from "@material-ui/core/CircularProgress";
+import { AiFillInfoCircle } from "react-icons/ai";
 
-const Description = () => {
-  const [progress, setProgress] = React.useState(0);
-
-  React.useEffect(() => {
-    function tick() {
-      // reset when reaching 100%
-      setProgress((oldProgress) => (oldProgress >= 100 ? 0 : oldProgress + 1));
-    }
-
-    const timer = setInterval(tick, 20);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+const Description = (props) => {
   return (
     <div className="description">
       <div className="content">
         <div className="text">
-          <CircularProgress
-            style={{ color: "#e67225" }}
-            variant="determinate"
-            value={progress}
-          />
+          <div className="title">
+            <AiFillInfoCircle className="icon" />
+            {props.title}
+          </div>
+          <div className="descriptionText">{props.description}</div>
         </div>
         <div className="imgContainer">
           <img src={ImgDesciption} alt="ImgDesciption" />

@@ -23,9 +23,41 @@
   width: 80%;
   height: 100%;
 
+  padding-left: 50px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.description .content .text .title {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  font-size: 22px;
+}
+
+.description .content .text .title .icon {
+  font-size: 26px;
+  margin-right: 10px;
+
+  color: #cccccc;
+}
+
+.description .content .text .descriptionText {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  color: #cccccc;
 }
 
 .description .content .imgContainer {
@@ -37,6 +69,6 @@
 }
 
 .description .content .imgContainer img {
-  width: 56%;
+  width: 140px;
   margin-bottom: 5px;
 }
