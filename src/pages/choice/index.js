@@ -2,18 +2,19 @@ import React from "react";
 import "./choice.css";
 import Descritpion from "../../components/description";
 
-import CircularProgress from "@material-ui/core/CircularProgress";
-
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
 
-import { AiFillCalendar, AiOutlineDotChart } from "react-icons/ai";
+import {
+  AiFillCalendar,
+  AiOutlineDotChart,
+  AiOutlineAreaChart,
+} from "react-icons/ai";
 
 import CalendarChart from "../../components/calendarChart";
 import ScatterChart from "../../components/scatterChart";
+import SteamChart from "../../components/streamChart";
 
 const useStyles = makeStyles({
   root: {
@@ -24,19 +25,6 @@ const useStyles = makeStyles({
 const Choice = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  const [progress, setProgress] = React.useState(0);
-
-  React.useEffect(() => {
-    function tick() {
-      setProgress((oldProgress) => (oldProgress >= 100 ? 0 : oldProgress + 1));
-    }
-
-    const timer = setInterval(tick, 20);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
 
   return (
     <div className="contentChoice">
@@ -65,8 +53,8 @@ const Choice = () => {
           />
           <BottomNavigationAction
             className="buttom"
-            label="Nearby"
-            icon={<LocationOnIcon />}
+            label="Stream"
+            icon={<AiOutlineAreaChart className="iconButtom" />}
           />
         </BottomNavigation>
       </div>
@@ -74,13 +62,9 @@ const Choice = () => {
         {value === 0 ? (
           <CalendarChart className="calendarChart" />
         ) : value === 1 ? (
-          <ScatterChart className="scatterPlot" />
+          <ScatterChart className="scatterChart" />
         ) : (
-          <CircularProgress
-            style={{ color: "#e67225" }}
-            variant="determinate"
-            value={progress}
-          />
+          <SteamChart className="steamChart" />
         )}
       </div>
     </div>
