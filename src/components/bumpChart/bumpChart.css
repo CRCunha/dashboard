@@ -10,3 +10,20 @@
 
   margin-bottom: 30px;
 }
+
+.bumpChart .title {
+  width: 95%;
+  height: 60px;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding-left: 30px;
+
+  font-size: 22pt;
+}
+
+.bumpChart .responsiveContainer {
+  width: 100%;
+  height: 85%;
+}
