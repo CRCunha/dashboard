@@ -12,7 +12,7 @@ const ScatterChart = () => {
         <ResponsiveScatterPlot
           data={data}
           colors={ListColors}
-          margin={{ top: 40, right: 140, bottom: 70, left: 90 }}
+          margin={{ top: 40, right: 140, bottom: 40, left: 90 }}
           xScale={{ type: "linear", min: 0, max: "auto" }}
           xFormat={function (e) {
             return e + " kg";

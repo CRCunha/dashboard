@@ -15,7 +15,7 @@ const CaledarChart = () => {
           to="2017-12-30"
           emptyColor="#eeeeee"
           colors={ListColors}
-          margin={{ top: 0, right: 40, bottom: 40, left: 40 }}
+          margin={{ top: 0, right: 40, bottom: 30, left: 40 }}
           yearSpacing={40}
           monthBorderColor="#ffffff"
           dayBorderWidth={2}

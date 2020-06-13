@@ -12,7 +12,7 @@ const StreamChart = () => {
         <ResponsiveStream
           data={data}
           keys={["Raoul", "Josiane", "Marcel", "René", "Paul", "Jacques"]}
-          margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+          margin={{ top: 20, right: 110, bottom: 50, left: 60 }}
           axisTop={null}
           axisRight={null}
           axisBottom={{
