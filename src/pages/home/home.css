@@ -19,6 +19,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .contentHome {
+    width: 100%;
+  }
   .contentHome .smallCharts {
     display: flex;
     flex-wrap: wrap;
