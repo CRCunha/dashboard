@@ -2,14 +2,9 @@ import React from "react";
 import "./navBar.css";
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import {
-  AiFillHome,
-  AiFillFund,
-  AiFillHdd,
-  AiFillSecurityScan,
-} from "react-icons/ai";
+import { AiFillHome, AiFillFund, AiFillSecurityScan } from "react-icons/ai";
 
-import { FaExchangeAlt } from "react-icons/fa";
+import { FaExchangeAlt, FaUsers } from "react-icons/fa";
 
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
@@ -53,11 +48,8 @@ const NavBar = () => {
               />
             </Link>
 
-            <Link to="/Other">
-              <BottomNavigationAction
-                className="menuIten"
-                icon={<AiFillHdd />}
-              />
+            <Link to="/Users">
+              <BottomNavigationAction className="menuIten" icon={<FaUsers />} />
             </Link>
 
             <Link to="/Other">
