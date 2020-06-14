@@ -7,6 +7,8 @@ import Line from "../pages/line";
 import Choice from "../pages/choice";
 import Other from "../pages/others";
 
+import "./mobile.css";
+
 const Routes = () => (
   // eslint-disable-next-line react/jsx-filename-extension
   <BrowserRouter>
