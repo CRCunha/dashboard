@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+  .description .content .text .descriptionText {
+    height: 100px;
+  }
+}
+
 .description {
   width: 94%;
   height: 180px;

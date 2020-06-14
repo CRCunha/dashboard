@@ -18,6 +18,23 @@
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 600px) {
+  .contentHome .smallCharts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contentHome .smallCharts .pieChart {
+    width: 100%;
+  }
+  .contentHome .smallCharts .radarChart {
+    width: 100%;
+  }
+  .contentHome .smallCharts .chortChart {
+    width: 100%;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
