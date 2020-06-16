@@ -18,9 +18,26 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="content">
+    <div
+      className="content"
+      style={{
+        width: "95%",
+        height: "96vh",
+
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexWrap: "wrap",
+
+        color: "#e67225",
+
+        overflow: "auto",
+      }}
+    >
       <CircularProgress
-        style={{ color: "#e67225" }}
+        style={{
+          color: "#e67225",
+        }}
         variant="determinate"
         value={progress}
       />
