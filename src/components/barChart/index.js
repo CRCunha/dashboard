@@ -1,17 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./barChart.css";
 import { ResponsiveBar } from "@nivo/bar";
-import data from "./data";
 import { ListColors } from "../colorCharts.js";
+import axios from "axios";
 
 const BarChart = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/bar", {})
+      .then((response) => {
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+
   return (
     <div className="barChart">
       <div className="title">BarChart</div>
       <div className="responsiveContainer">
         <ResponsiveBar
           data={data}
-          keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
+          keys={[
+            "country",
+            "hot dog",
+            "hot dogColor",
+            "burger",
+            "burgerColor",
+            "sandwich",
+            "sandwichColor",
+            "kebab",
+            "kebabColor",
+            "fries",
+            "friesColor",
+            "donut",
+            "donutColor",
+          ]}
           indexBy="country"
           margin={{ top: 20, right: 130, bottom: 50, left: 60 }}
           padding={0.3}
