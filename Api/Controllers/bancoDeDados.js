@@ -4,7 +4,7 @@ let conexao = mysql.createConnection({
   host: "localhost",
   database: "tcc",
   user: "root",
-  password: "281998",
+  password: "",
   charset: "utf8",
 });
 
