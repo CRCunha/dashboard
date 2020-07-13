@@ -1,0 +1,13 @@
+.contentCards {
+  width: 94%;
+  height: 92vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  color: #e67225;
+
+  overflow: auto;
+}

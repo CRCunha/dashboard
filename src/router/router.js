@@ -7,6 +7,8 @@ import Line from "../pages/line";
 import Choice from "../pages/choice";
 import Other from "../pages/others";
 import Users from "../pages/users";
+import Login from "../pages/login";
+import Cards from "../pages/cards";
 
 import "./mobile.css";
 
@@ -20,6 +22,8 @@ const Routes = () => (
       <Route path="/Choice" exact component={Choice} />
       <Route path="/Users" exact component={Users} />
       <Route path="/other" component={Other} />
+      <Route path="/cards" component={Cards} />
+      <Route path="/login" component={Login} />
     </Switch>
   </BrowserRouter>
 );
