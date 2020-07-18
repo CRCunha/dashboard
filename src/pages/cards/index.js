@@ -19,6 +19,11 @@ const Home = () => {
 
   return (
     <div className="contentCards">
+      <InfoCards color="#FFCC69" />
+      <InfoCards color="#A9EB82" />
+      <InfoCards color="#FFA478" />
+      <InfoCards />
+      <InfoCards />
       <InfoCards />
     </div>
   );

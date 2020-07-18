@@ -1,14 +1,26 @@
 import React from "react";
 import "./infoCard.css";
-import { AiFillCheckSquare } from "react-icons/ai";
+import { AiFillCheckSquare, AiFillDollarCircle } from "react-icons/ai";
 
-const InfoCard = () => {
+const InfoCard = (props) => {
   return (
     <div className="card">
       <div className="header">
-        <div className="title">Card Teste</div>
-        <div className="icon">
+        <div className="title" style={{ color: props.color }}>
+          Card Teste
+        </div>
+        <div style={{ color: props.color }} className="icon">
           <AiFillCheckSquare />
+        </div>
+      </div>
+      <div className="tagContainer">
+        <div style={{ borderColor: props.color }} className="tag">
+          <div style={{ color: props.color }} className="tagIcon">
+            <AiFillDollarCircle />
+          </div>
+          <div style={{ color: props.color }} className="tagText">
+            TagTeste
+          </div>
         </div>
       </div>
     </div>

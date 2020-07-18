@@ -6,8 +6,9 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
+  place-content: flex-start;
 
-  color: #e67225;
+  color: #ccc;
 
   overflow: auto;
 }

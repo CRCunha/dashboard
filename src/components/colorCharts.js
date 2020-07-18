@@ -1,5 +1,5 @@
 export const ListColors = [
-  "#e67225",
+  "#ff9671",
   "#DF525E",
   "#B54E83",
   "#79548D",

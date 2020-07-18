@@ -7,7 +7,7 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  color: #e67225;
+  color: #ff9671;
 
   overflow: auto;
 }
@@ -32,7 +32,7 @@
 }
 
 .contentChoice .buttonControler .MuiBottomNavigationAction-root.Mui-selected {
-  color: #e67225 !important;
+  color: #ff9671 !important;
 }
 
 .contentChoice .buttonControler .MuiBottomNavigation-root {

@@ -7,7 +7,7 @@ const CardUser = (props) => {
     <div className="cardUser">
       <div className="avatarIcon">
         <Avatar
-          style={{ backgroundColor: "#e67225", width: 60, height: 60 }}
+          style={{ backgroundColor: "#ff9671", width: 60, height: 60 }}
           alt={props.nome}
           src={props.nome}
         />
