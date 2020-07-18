@@ -12,3 +12,46 @@
 
   overflow: auto;
 }
+
+.contentCards .buttonCardContainer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 18pt;
+
+  margin-bottom: 20px;
+}
+
+.contentCards .buttonCardContainer .buttonCard {
+  color: #ff9671;
+  text-transform: none;
+
+  border-radius: 20px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #fff;
+
+  box-shadow: 0 5px 30px -16px rgba(9, 9, 16, 0.2);
+}
+
+.iconPlus {
+  margin-left: 5px;
+  font-size: 12pt;
+}
+
+.buttomDialog {
+  color: "#FFA478";
+}
+
+.MuiDialog-paperScrollPaper {
+  min-width: 600px;
+  border-radius: 20px !important;
+}
+
+.MuiPaper-elevation24 {
+  box-shadow: 0 5px 30px -16px rgba(9, 9, 16, 0.2) !important;
+}
