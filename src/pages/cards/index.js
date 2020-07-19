@@ -6,54 +6,54 @@ import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { AiFillPlusCircle } from "react-icons/ai";
 import Slide from "@material-ui/core/Slide";
 
 import TextField from "@material-ui/core/TextField";
-import {
-  fade,
-  ThemeProvider,
-  withStyles,
-  makeStyles,
-  createMuiTheme,
-} from "@material-ui/core/styles";
+
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+
+import axios from "axios";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const CssTextField = withStyles({
-  root: {
-    "& label.Mui-focused": {
-      color: "#FFA478",
-    },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "#FFA478",
-    },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "#FFA478",
-      },
-      "&:hover fieldset": {
-        borderColor: "#FFA478",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "#FFA478",
-      },
-    },
-  },
-})(TextField);
-
 const Home = () => {
   const [open, setOpen] = useState(false);
+
+  const [title, setTitle] = useState("");
+  const [tag, setTag] = useState("");
+  const [description, setDescription] = useState("");
 
   const handleClickOpen = () => {
     setOpen(true);
   };
 
   const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleChange = (event) => {
+    setTag(event.target.value);
+  };
+
+  const handleSubmit = () => {
+    const Post = {
+      title: title,
+      tag: tag,
+      description: description,
+    };
+
+    axios.post(`http://localhost:3001/api/infoCards`, Post).then((res) => {
+      console.log(res);
+      console.log(res.data);
+    });
+
     setOpen(false);
   };
 
@@ -82,19 +82,53 @@ const Home = () => {
       >
         <DialogTitle id="alert-dialog-title">{"Novo Card"}</DialogTitle>
         <DialogContent>
-          {/* <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending
-            anonymous location data to Google, even when no apps are running.
-          </DialogContentText> */}
-          <form noValidate autoComplete="off">
-            <CssTextField id="standard-basic" label="Standard" fullWidth />
-          </form>
+          {/* Titulo */}
+          <FormControl className="formControl" noValidate autoComplete="off">
+            <TextField
+              id="standard-basic"
+              label="Titulo"
+              fullWidth
+              onChange={(event) => setTitle(event.target.value)}
+            />
+          </FormControl>
+          {/* Tag */}
+          <FormControl>
+            <InputLabel id="demo-simple-select-label">Tag</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              className="select"
+              value={tag}
+              onChange={handleChange}
+            >
+              <MenuItem style={{ color: "#CCCCCC" }} value={"null"}>
+                Null
+              </MenuItem>
+              <MenuItem style={{ color: "#A9EB82" }} value={"Low"}>
+                Low
+              </MenuItem>
+              <MenuItem style={{ color: "#FFCC69" }} value={"Medium"}>
+                Medium
+              </MenuItem>
+              <MenuItem style={{ color: "#FFA478" }} value={"high"}>
+                high
+              </MenuItem>
+            </Select>
+          </FormControl>
+          {/* Descrição */}
+          <FormControl className="formControl" noValidate autoComplete="off">
+            <TextField
+              id="standard-basic"
+              label="Description"
+              fullWidth
+              onChange={(event) => setDescription(event.target.value)}
+            />
+          </FormControl>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} style={{ color: "#FFA478" }}>
             Disagree
           </Button>
-          <Button onClick={handleClose} style={{ color: "#FFA478" }} autoFocus>
+          <Button onClick={handleSubmit} style={{ color: "#FFA478" }} autoFocus>
             Agree
           </Button>
         </DialogActions>

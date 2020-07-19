@@ -92,3 +92,29 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+.MuiFormControl-root {
+  width: 100%;
+
+  margin-bottom: 10px !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #ffa478 !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #ffa478 !important;
+}
+
+#standard-basic-label {
+  color: #ffa478 !important;
+}
+
+.MuiInputLabel-animated {
+  color: #ffa478 !important;
+}
+
+.MuiTypography-h6 {
+  color: #ccc;
+}
