@@ -26,10 +26,6 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const Home = () => {
   const [open, setOpen] = useState(false);
 
-  const [title, setTitle] = useState("");
-  const [tag, setTag] = useState("");
-  const [description, setDescription] = useState("");
-
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -41,6 +37,10 @@ const Home = () => {
   const handleChange = (event) => {
     setTag(event.target.value);
   };
+
+  const [title, setTitle] = useState("");
+  const [tag, setTag] = useState("");
+  const [description, setDescription] = useState("");
 
   const handleSubmit = () => {
     const Post = {

@@ -1,4 +1,4 @@
-import React from "react";
+\import React from "react";
 import "./infoCard.css";
 import { AiFillCheckSquare, AiFillDollarCircle } from "react-icons/ai";
 
