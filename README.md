@@ -29,3 +29,11 @@ $ npm start
 - Finalize visual adjustments
 - Insert tests
 - Create documentation and data flow diagram
+
+
+<img align="center" src="https://i.imgur.com/HZ4lOvk.gif" width="450"> - 
+<img align="center" src="https://i.imgur.com/xBZzhs8.gif" width="450">
+
+<img align="center" src="https://i.imgur.com/vloQ9z8.gif" width="450"> - 
+<img align="center" src="https://i.imgur.com/AhGBZii.gif" width="450">
+
