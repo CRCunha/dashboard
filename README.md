@@ -1,6 +1,6 @@
 ## Plotting Data Charts
 <p align="center">
-<img align="center" src="https://i.imgur.com/4aRDorN.png" title="FVCproductions" alt="FVCproductions">
+<img align="center" src="https://i.imgur.com/PRraN1A.png" title="FVCproductions" alt="FVCproductions">
 </p>
 
 
