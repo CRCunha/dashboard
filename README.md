@@ -1,13 +1,18 @@
 ## Plotting Data Charts
 <p align="center">
+<br><br/>
 <img align="center" src="https://i.imgur.com/PRraN1A.png" title="FVCproductions" alt="FVCproductions">
+<br><br/>
+<br><br/>
 </p>
 
 
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
+![License](http://img.shields.io/:license-mit-blue.svg)
+![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)
 ![Repo Size](https://img.shields.io/github/repo-size/CRCunha/dashboard)
 ![Commits](https://img.shields.io/github/commit-activity/m/CRCunha/dashboard)
+
+
 
 ***Plataform Preview***
 
