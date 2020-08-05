@@ -1,7 +1,7 @@
 ## Plotting Data Charts
 <p align="center">
 <br><br/>
-<img align="center" src="https://i.imgur.com/PRraN1A.png" title="FVCproductions" alt="FVCproductions">
+<img align="center" src="https://i.imgur.com/PRraN1A.png">
 <br><br/>
 <br><br/>
 </p>
@@ -16,7 +16,7 @@
 
 ***Plataform Preview***
 
-[![INSERT YOUR GRAPHIC HERE](https://i.imgur.com/KFnMxse.png)]()
+[![Plataform](https://i.imgur.com/AtavXB5.png)]()
 
 The purpose of the platform is to create a fully modular panel to obtain a more aggregated and easier to view data response
 
@@ -37,9 +37,9 @@ $ npm start
 
 ***Overview***
 
-<img align="center" src="https://i.imgur.com/HZ4lOvk.gif" width="400"> - 
-<img align="center" src="https://i.imgur.com/xBZzhs8.gif" width="400">
+<img align="center" src="https://i.imgur.com/3IwlkDG.gif" width="400"> - 
+<img align="center" src="https://i.imgur.com/mTvDbGh.gif" width="400">
 
-<img align="center" src="https://i.imgur.com/vloQ9z8.gif" width="400"> - 
-<img align="center" src="https://i.imgur.com/AhGBZii.gif" width="400">
+<img align="center" src="https://i.imgur.com/Ioro1ew.png" width="400"> - 
+<img align="center" src="https://i.imgur.com/5Zxj1fe.png" width="400">
 
