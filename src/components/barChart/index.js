@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./barChart.css";
 import { ResponsiveBar } from "@nivo/bar";
 import { ListColors } from "../colorCharts.js";
