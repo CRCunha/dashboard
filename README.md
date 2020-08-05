@@ -14,7 +14,7 @@
 
 
 
-***Plataform Preview***
+***Plataform Preview Click <a href="https://dashboardcris.netlify.app">Here</a>***
 
 [![Plataform](https://i.imgur.com/AtavXB5.png)]()
 
