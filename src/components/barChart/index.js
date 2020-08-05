@@ -2,28 +2,28 @@ import React, { useEffect, useState } from "react";
 import "./barChart.css";
 import { ResponsiveBar } from "@nivo/bar";
 import { ListColors } from "../colorCharts.js";
-import axios from "axios";
+// import axios from "axios";
+import Data from "./data.json";
 
 const BarChart = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get("http://localhost:3001/api/bar", {})
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:3001/api/bar", {})
+  //     .then((response) => {
+  //       setData(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
 
   return (
     <div className="barChart">
       <div className="title">BarChart</div>
       <div className="responsiveContainer">
         <ResponsiveBar
-          data={data}
+          data={Data}
           keys={[
             "country",
             "hot dog",
