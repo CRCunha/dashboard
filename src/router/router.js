@@ -6,7 +6,7 @@ import Home from "../pages/home";
 import Line from "../pages/line";
 import Choice from "../pages/choice";
 import Other from "../pages/others";
-import Users from "../pages/users";
+// import Users from "../pages/users";
 import Login from "../pages/login";
 import Cards from "../pages/cards";
 

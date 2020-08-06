@@ -8,7 +8,7 @@ import {
   AiFillSecurityScan,
   AiFillSchedule,
 } from "react-icons/ai";
-import { FaExchangeAlt, FaUsers } from "react-icons/fa";
+import { FaExchangeAlt } from "react-icons/fa";
 
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
