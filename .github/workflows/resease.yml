@@ -8,7 +8,7 @@ jobs:
     steps:      
     - uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GITHUBNECTONTOKEN }}
+        token: ${{ secrets.RELEASE }}
         submodules: true
     - run: git fetch --prune --unshallow
     - name: Set outputs
@@ -18,7 +18,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUBNECTONTOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE }}
       with:
           tag_name: ${{ steps.vars.outputs.git_tag }}
           release_name: Release v. ${{ steps.vars.outputs.git_tag }}
@@ -33,7 +33,7 @@ jobs:
     - name: Upload binaries to release
       uses: svenstaro/upload-release-action@v1-release
       with:
-        repo_token: ${{ secrets.GITHUBNECTONTOKEN }}
+        repo_token: ${{ secrets.RELEASE }}
         file: ./dashboard.zip
         asset_name: dashboard.zip
         tag: ${{ steps.vars.outputs.git_tag  }}
