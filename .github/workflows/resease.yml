@@ -1,0 +1,40 @@
+name: .NET Core - Producao
+on:  
+  push:
+    branches: [ master ]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:      
+    - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUBNECTONTOKEN }}
+        submodules: true
+    - run: git fetch --prune --unshallow
+    - name: Set outputs
+      id: vars
+      run: echo "::set-output name=git_tag::$(git describe --abbrev=0 --tags)"
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUBNECTONTOKEN }}
+      with:
+          tag_name: ${{ steps.vars.outputs.git_tag }}
+          release_name: Release v. ${{ steps.vars.outputs.git_tag }}
+          body: Release versão ${{ steps.vars.outputs.git_tag }}
+          draft: false
+          prerelease: false
+    - name: Zip Release - Production
+      uses: TheDoctor0/zip-release@v0.3.0
+      with:
+        filename: dashboard.zip
+        path: ./production
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v1-release
+      with:
+        repo_token: ${{ secrets.GITHUBNECTONTOKEN }}
+        file: ./dashboard.zip
+        asset_name: dashboard.zip
+        tag: ${{ steps.vars.outputs.git_tag  }}
+        overwrite: false
